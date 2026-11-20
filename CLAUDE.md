@@ -7,6 +7,7 @@ A single static page: `index.html` (all CSS inline, no build step). Keep it one 
 - Text Ellie supplies (About, clips) goes in **exactly as written** — do not copyedit. Flag possible typos in chat instead.
 - Contact line must read: "Reach me at elliefivas@washsun.com or on Signal at @elliefivas.65."
 - Clips go in `<ul class="clip-list">` as `<li>` items with `.outlet`, a headline `<a>`, and a `<time>`; remove the `.placeholder` paragraph once the first clip is added.
+- To add a clip from a link, use the project skill `/add-clip <url>` (`.claude/skills/add-clip/SKILL.md`). Clips stay newest first, and headlines are copied exactly as published, never rewritten.
 
 ## Style guide
 
