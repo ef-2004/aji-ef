@@ -12,32 +12,34 @@
     /* Style guide lives in CLAUDE.md — keep the two in sync. */
     :root {
       --paper: #ffffff;
-      --ink: #111111;
-      --ink-soft: #4a4a4a;
-      --rule: #111111;
-      --rule-light: #dcdcdc;
-      --sun: #f8c91c;          /* Washington Sun yellow */
-      --sun-wash: #fff6d6;     /* pale yellow tint */
-      --navy: #1f3a8a;         /* complement to the yellow */
-      --sky: #e6ecfa;          /* pale navy tint */
-      --brick: #c2410c;        /* small warm accent */
-      --label-bg: #111111;
+      --ink: #141a22;
+      --ink-soft: #4d5560;
+      --rule: #1c2e4a;
+      --rule-light: #dde3ea;
+      --navy: #1c2e4a;         /* primary: top bar, labels, buttons, links */
+      --sky: #a9c8e6;          /* light blue: highlights */
+      --sky-wash: #eaf2fa;     /* pale blue backgrounds */
+      --brown: #7b4f2c;        /* warm accent text */
+      --tan: #c7a17a;          /* light brown: underlines, borders */
+      --tan-wash: #f6efe7;     /* pale brown backgrounds */
+      --label-bg: #1c2e4a;
       --label-text: #ffffff;
     }
     @media (prefers-color-scheme: dark) {
       :root {
-        --paper: #121212;
-        --ink: #f1efe9;
-        --ink-soft: #b5b2aa;
-        --rule: #f1efe9;
-        --rule-light: #333333;
-        --sun: #f8c91c;
-        --sun-wash: #2a2410;
-        --navy: #9db4f5;
-        --sky: #1a2238;
-        --brick: #f08a5d;
-        --label-bg: #f8c91c;
-        --label-text: #111111;
+        --paper: #11161d;
+        --ink: #eef1f5;
+        --ink-soft: #aab3bf;
+        --rule: #c8d3e0;
+        --rule-light: #2a3340;
+        --navy: #a9c8e6;
+        --sky: #3d5a7a;
+        --sky-wash: #1a2533;
+        --brown: #d4a77c;
+        --tan: #9c7651;
+        --tan-wash: #261f19;
+        --label-bg: #a9c8e6;
+        --label-text: #11161d;
       }
     }
 
@@ -62,7 +64,7 @@
 
     /* ---------- Masthead (ProPublica layout) ---------- */
     .masthead {
-      border-top: 6px solid var(--sun);
+      border-top: 6px solid var(--navy);
     }
 
     .masthead .wrap {
@@ -95,14 +97,14 @@
 
     .tagline em {
       font-weight: 400;
-      background: linear-gradient(transparent 60%, var(--sun) 60%);
+      background: linear-gradient(transparent 60%, var(--sky) 60%);
       padding: 0 0.1em;
       -webkit-box-decoration-break: clone;
       box-decoration-break: clone;
     }
 
     @media (prefers-color-scheme: dark) {
-      .tagline em { background: none; color: var(--sun); }
+      .tagline em { background: none; color: var(--navy); }
     }
 
     /* ---------- Section nav ---------- */
@@ -147,7 +149,7 @@
       text-decoration: none;
     }
 
-    .nav a:hover { color: var(--navy); }
+    .nav a:hover { color: var(--brown); }
 
     /* ---------- Section labels (Washington Sun style) ---------- */
     .label {
@@ -190,8 +192,8 @@
     .about p:last-child { margin-bottom: 0; }
 
     .contact-card {
-      background: var(--sun-wash);
-      border-top: 4px solid var(--sun);
+      background: var(--sky-wash);
+      border-top: 4px solid var(--brown);
       padding: 1.5rem;
     }
 
@@ -217,12 +219,12 @@
     }
 
     .pill.primary {
-      background: var(--sun);
-      border-color: var(--sun);
-      color: #111111;
+      background: var(--navy);
+      border-color: var(--navy);
+      color: var(--paper);
     }
 
-    .pill:hover { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+    .pill:hover { background: var(--brown); border-color: var(--brown); color: var(--paper); }
 
     /* ---------- Clips ---------- */
     .clips {
@@ -251,7 +253,7 @@
       font-size: 0.75rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: var(--brick);
+      color: var(--brown);
     }
 
     .clip-list a {
@@ -264,7 +266,7 @@
 
     .clip-list a:hover {
       text-decoration: underline;
-      text-decoration-color: var(--sun);
+      text-decoration-color: var(--sky);
       text-decoration-thickness: 3px;
     }
 
@@ -279,8 +281,8 @@
     .placeholder {
       margin: 0;
       padding: 1.5rem;
-      background: var(--sky);
-      border-left: 4px solid var(--navy);
+      background: var(--tan-wash);
+      border-left: 4px solid var(--brown);
       color: var(--ink-soft);
       font-style: italic;
     }
@@ -289,7 +291,7 @@
     a { color: var(--navy); }
 
     .about a, .contact-card p a {
-      text-decoration-color: var(--sun);
+      text-decoration-color: var(--tan);
       text-decoration-thickness: 2px;
       text-underline-offset: 3px;
     }
