@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ellie Fivas</title>
+  <meta name="description" content="Ellie Fivas is a reporting fellow at The Washington Sun covering health, family, and social policy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fbfaf7;
+      --text: #1d1d1b;
+      --muted: #6b6a66;
+      --rule: #dedbd3;
+      --accent: #9a3b26;
+      --placeholder-bg: #f3f0e8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161615;
+        --text: #ebe9e4;
+        --muted: #a09d96;
+        --rule: #34332f;
+        --accent: #e08a6f;
+        --placeholder-bg: #201f1d;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 1.125rem;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 4.5rem 1rem 4rem;
+    }
+
+    header {
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    h1 {
+      font-weight: 600;
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.75rem;
+    }
+
+    .beat {
+      margin: 0;
+      font-size: 1.25rem;
+      color: var(--muted);
+    }
+
+    .beat em { color: var(--text); }
+
+    section {
+      padding: 2.25rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    h2 {
+      font-family: Inter, system-ui, sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 1rem;
+    }
+
+    .placeholder {
+      margin: 0;
+      padding: 1.25rem;
+      border: 1px dashed var(--rule);
+      border-radius: 4px;
+      background: var(--placeholder-bg);
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .clips {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover { text-decoration-thickness: 2px; }
+
+    .contact p { margin: 0; }
+
+    footer {
+      padding-top: 2rem;
+      font-family: Inter, system-ui, sans-serif;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Ellie Fivas</h1>
+      <p class="beat">Reporting fellow at <em>The Washington Sun</em> covering health, family, and social policy.</p>
+    </header>
+
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+      <!-- ABOUT: replace the placeholder paragraph below with your bio. -->
+      <p class="placeholder">[About text coming soon]</p>
+    </section>
+
+    <section id="clips" aria-labelledby="clips-heading">
+      <h2 id="clips-heading">Clips</h2>
+      <!--
+        CLIPS: add stories as list items inside the <ul>, e.g.
+        <li><a href="https://...">Story headline</a> — <span>Month Day, Year</span></li>
+        Then delete the placeholder paragraph.
+      -->
+      <ul class="clips"></ul>
+      <p class="placeholder">Stories will be added here soon.</p>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>Reach me at <a href="mailto:elliefivas@washsun.com">elliefivas@washsun.com</a> or on Signal at <strong>@elliefivas.65</strong>.</p>
+    </section>
+
+    <footer>
+      &copy; <span id="year">2026</span> Ellie Fivas
+    </footer>
+  </main>
+</body>
+</html>
