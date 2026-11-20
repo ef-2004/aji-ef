@@ -191,6 +191,24 @@
 
     .about p:last-child { margin-bottom: 0; }
 
+    .about-body {
+      display: grid;
+      grid-template-columns: 168px minmax(0, 1fr);
+      gap: 1.75rem;
+      align-items: start;
+    }
+
+    .headshot {
+      display: block;
+      width: 100%;
+      max-width: 168px;
+      height: auto;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-bottom: 4px solid var(--brown);
+      background: var(--sky-wash);
+    }
+
     .contact-card {
       background: var(--sky-wash);
       border-top: 4px solid var(--brown);
@@ -318,6 +336,8 @@
       .nav .wrap { flex-direction: column; align-items: flex-start; }
       .lead { grid-template-columns: 1fr; gap: 2.5rem; padding-top: 2rem; }
       .about p:first-of-type { font-size: 1.2rem; }
+      .about-body { grid-template-columns: 1fr; gap: 1.25rem; }
+      .headshot { width: 140px; }
     }
   </style>
 </head>
@@ -349,9 +369,14 @@
     <div class="wrap lead">
       <section id="about" class="about" aria-labelledby="about-heading">
         <h2 class="label" id="about-heading"><span>About</span></h2>
-        <p>Ellie covers policy and politics at The Washington Sun, where she is also an Allbritton Journalism Fellow. Her special reporting interests include artificial intelligence in education, the conservative movement, LGBTQ+ policy and the intersection between fringe culture and mainstream politics.</p>
-        <p>She previously reported on health policy at the Georgia Recorder and fact-checked for CNN. Her other professional experience includes free speech policy at the Knight First Amendment Institute at Columbia University, rule of law research at the Carter Center and writing consultant experience at her university.</p>
-        <p>In May 2026, she graduated from Emory University in Atlanta, where she majored in political science and English. She also served as editor-in-chief of The Emory Wheel, her college newspaper, and led the group through its transition to a nonprofit organization. She has won several national and regional recognitions for her work through the Society of Professional Journalists — including leading the newspaper when it was named best in the country in 2025.</p>
+        <div class="about-body">
+          <img class="headshot" src="headshot.webp" width="168" height="168" alt="Headshot of Ellie Fivas">
+          <div class="about-text">
+            <p>Ellie covers policy and politics at The Washington Sun, where she is also an Allbritton Journalism Fellow. Her special reporting interests include artificial intelligence in education, the conservative movement, LGBTQ+ policy and the intersection between fringe culture and mainstream politics.</p>
+            <p>She previously reported on health policy at the Georgia Recorder and fact-checked for CNN. Her other professional experience includes free speech policy at the Knight First Amendment Institute at Columbia University, rule of law research at the Carter Center and writing consultant experience at her university.</p>
+            <p>In May 2026, she graduated from Emory University in Atlanta, where she majored in political science and English. She also served as editor-in-chief of The Emory Wheel, her college newspaper, and led the group through its transition to a nonprofit organization. She has won several national and regional recognitions for her work through the Society of Professional Journalists — including leading the newspaper when it was named best in the country in 2025.</p>
+          </div>
+        </div>
       </section>
 
       <aside id="contact" aria-labelledby="contact-heading">

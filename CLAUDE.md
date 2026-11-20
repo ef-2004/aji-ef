@@ -18,6 +18,7 @@ Keep all future changes consistent with this style. The palette is defined as CS
 1. **Masthead:** a 6px navy bar at the top; the name huge, uppercase, left-aligned; the tagline (role + beat) in bold serif on the right, aligned to the bottom of the name.
 2. **Nav bar** between two thin navy rules: a mono "REPORTING ON" kicker followed by beat links on the left; page links (About, Clips, Contact) on the right.
 3. **Lead row:** About (wide column, first paragraph slightly larger) beside a Contact card (narrow column).
+   - The headshot (`headshot.webp`, 168×168) sits to the left of the About text with a brown bottom border; on phones it stacks above the text at 140px. Don't display it larger than 168px — the file is low resolution.
 4. **Clips:** a full-width grid of stories below.
 5. **Footer:** a thin rule with small uppercase mono text.
 - Max content width 72rem, 1rem side gutter. Under 760px everything stacks into one column.
